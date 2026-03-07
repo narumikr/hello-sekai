@@ -3,5 +3,21 @@
     "greeting": "ハローセカイ",
     "tap-to-start": "タップしてスタート",
     "click-to-start": "クリックしてスタート"
+  },
+  "profile-page": {
+    "icons": {
+      "twitter":   { "label": "Twitter" },
+      "github":    { "label": "GitHub" },
+      "instagram": { "label": "Instagram" },
+      "youtube":   { "label": "YouTube" },
+      "line":      { "label": "LINE" },
+      "discord":   { "label": "Discord" },
+      "tiktok":    { "label": "TikTok" },
+      "twitch":    { "label": "Twitch" },
+      "note":      { "label": "Note" },
+      "zenn":      { "label": "Zenn" },
+      "spotify":   { "label": "Spotify" },
+      "steam":     { "label": "Steam" }
+    }
   }
 }
