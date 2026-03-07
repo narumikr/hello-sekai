@@ -2,8 +2,10 @@ import { AppIcon } from "@/components/atoms/AppIcon";
 
 export interface AppIconItem {
   id: string;
-  icon: string;
+  iconPath: string;
   label: string;
+  colSpan?: number;
+  rowSpan?: number;
   onClick?: () => void;
 }
 
@@ -16,12 +18,19 @@ export const AppIconGrid = ({ items }: AppIconGridProps) => {
     <div className="w-full max-w-180 mx-auto px-4">
       <div className="grid grid-cols-4 md:grid-cols-6 gap-4">
         {items.map((item) => (
-          <AppIcon
+          <div
             key={item.id}
-            icon={item.icon}
-            label={item.label}
-            onClick={item.onClick}
-          />
+            style={{
+              gridColumn: item.colSpan ? `span ${item.colSpan}` : undefined,
+              gridRow: item.rowSpan ? `span ${item.rowSpan}` : undefined,
+            }}
+          >
+            <AppIcon
+              iconPath={item.iconPath}
+              label={item.label}
+              onClick={item.onClick}
+            />
+          </div>
         ))}
       </div>
     </div>
