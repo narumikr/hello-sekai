@@ -1,0 +1,28 @@
+@keyframes scaleUp {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@layer utilities {
+  .animate-scale-up {
+    animation: scaleUp 5s ease-in-out infinite;
+  }
+
+  .animate-fade-out {
+    animation: fade-out 2s ease-in-out forwards;
+  }
+}

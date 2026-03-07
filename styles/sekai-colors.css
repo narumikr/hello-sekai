@@ -1,0 +1,226 @@
+@layer utilities {
+  .text-miku {
+    color: var(--color-miku);
+  }
+  .bg-miku {
+    background-color: var(--color-miku);
+  }
+
+  .text-rin {
+    color: var(--color-rin);
+  }
+  .bg-rin {
+    background-color: var(--color-rin);
+  }
+
+  .text-len {
+    color: var(--color-len);
+  }
+  .bg-len {
+    background-color: var(--color-len);
+  }
+
+  .text-luka {
+    color: var(--color-luka);
+  }
+  .bg-luka {
+    background-color: var(--color-luka);
+  }
+
+  .text-meiko {
+    color: var(--color-meiko);
+  }
+  .bg-meiko {
+    background-color: var(--color-meiko);
+  }
+
+  .text-kaito {
+    color: var(--color-kaito);
+  }
+  .bg-kaito {
+    background-color: var(--color-kaito);
+  }
+
+  .text-ichika {
+    color: var(--color-ichika);
+  }
+  .bg-ichika {
+    background-color: var(--color-ichika);
+  }
+
+  .text-saki {
+    color: var(--color-saki);
+  }
+  .bg-saki {
+    background-color: var(--color-saki);
+  }
+
+  .text-honami {
+    color: var(--color-honami);
+  }
+  .bg-honami {
+    background-color: var(--color-honami);
+  }
+
+  .text-shiho {
+    color: var(--color-shiho);
+  }
+  .bg-shiho {
+    background-color: var(--color-shiho);
+  }
+
+  .text-minori {
+    color: var(--color-minori);
+  }
+  .bg-minori {
+    background-color: var(--color-minori);
+  }
+
+  .text-haruka {
+    color: var(--color-haruka);
+  }
+  .bg-haruka {
+    background-color: var(--color-haruka);
+  }
+
+  .text-airi {
+    color: var(--color-airi);
+  }
+  .bg-airi {
+    background-color: var(--color-airi);
+  }
+
+  .text-shizuku {
+    color: var(--color-shizuku);
+  }
+  .bg-shizuku {
+    background-color: var(--color-shizuku);
+  }
+
+  .text-kohane {
+    color: var(--color-kohane);
+  }
+  .bg-kohane {
+    background-color: var(--color-kohane);
+  }
+
+  .text-an {
+    color: var(--color-an);
+  }
+  .bg-an {
+    background-color: var(--color-an);
+  }
+
+  .text-akito {
+    color: var(--color-akito);
+  }
+  .bg-akito {
+    background-color: var(--color-akito);
+  }
+
+  .text-toya {
+    color: var(--color-toya);
+  }
+  .bg-toya {
+    background-color: var(--color-toya);
+  }
+
+  .text-tsukasa {
+    color: var(--color-tsukasa);
+  }
+  .bg-tsukasa {
+    background-color: var(--color-tsukasa);
+  }
+
+  .text-emu {
+    color: var(--color-emu);
+  }
+  .bg-emu {
+    background-color: var(--color-emu);
+  }
+
+  .text-nene {
+    color: var(--color-nene);
+  }
+  .bg-nene {
+    background-color: var(--color-nene);
+  }
+
+  .text-rui {
+    color: var(--color-rui);
+  }
+  .bg-rui {
+    background-color: var(--color-rui);
+  }
+
+  .text-kanade {
+    color: var(--color-kanade);
+  }
+  .bg-kanade {
+    background-color: var(--color-kanade);
+  }
+
+  .text-mafuyu {
+    color: var(--color-mafuyu);
+  }
+  .bg-mafuyu {
+    background-color: var(--color-mafuyu);
+  }
+
+  .text-ena {
+    color: var(--color-ena);
+  }
+  .bg-ena {
+    background-color: var(--color-ena);
+  }
+
+  .text-mizuki {
+    color: var(--color-mizuki);
+  }
+  .bg-mizuki {
+    background-color: var(--color-mizuki);
+  }
+
+  /* Unit colors */
+  .text-virtualsinger {
+    color: var(--color-virtualsinger);
+  }
+  .bg-virtualsinger {
+    background-color: var(--color-virtualsinger);
+  }
+
+  .text-leoneed {
+    color: var(--color-leoneed);
+  }
+  .bg-leoneed {
+    background-color: var(--color-leoneed);
+  }
+
+  .text-moremorejump {
+    color: var(--color-moremorejump);
+  }
+  .bg-moremorejump {
+    background-color: var(--color-moremorejump);
+  }
+
+  .text-vividbadsquad {
+    color: var(--color-vividbadsquad);
+  }
+  .bg-vividbadsquad {
+    background-color: var(--color-vividbadsquad);
+  }
+
+  .text-wonderlandsshowtime {
+    color: var(--color-wonderlandsshowtime);
+  }
+  .bg-wonderlandsshowtime {
+    background-color: var(--color-wonderlandsshowtime);
+  }
+
+  .text-nightcode {
+    color: var(--color-nightcode);
+  }
+  .bg-nightcode {
+    background-color: var(--color-nightcode);
+  }
+}
