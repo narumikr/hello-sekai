@@ -22,13 +22,15 @@ export const MusicPlayerWidget = ({
 }: MusicPlayerWidgetProps) => {
   return (
     <div className="relative flex flex-col justify-between w-full h-full p-3 rounded-lg backdrop-blur-sm border border-black/20 overflow-hidden">
-      {/* 楽曲情報スワイプエリア */}
+      {/* 楽曲情報 */}
       <Swiper
         modules={[Autoplay, EffectFade]}
         effect="fade"
+        fadeEffect={{ crossFade: true }}
+        slidesPerView={1}
         autoplay={{ delay: autoplayDelay, disableOnInteraction: false }}
         loop
-        className="w-full flex-1"
+        className="w-full min-h-12"
       >
         {items.map((item) => (
           <SwiperSlide key={`${item.title}-${item.artist}`}>
@@ -44,7 +46,7 @@ export const MusicPlayerWidget = ({
         ))}
       </Swiper>
 
-      {/* シークバー（装飾） */}
+      {/* シークバー */}
       <div className="px-1 mt-2">
         <div className="relative h-1 w-full rounded-full bg-black/10">
           <div className="absolute left-0 top-0 h-full w-2/5 rounded-full bg-miku opacity-60" />
@@ -62,9 +64,9 @@ export const MusicPlayerWidget = ({
           className="text-miku opacity-70"
           aria-hidden="true"
         />
-        <div className="flex items-center justify-center w-8 h-8 rounded-full border border-black/20 backdrop-blur-sm">
+        <div className="flex items-center justify-center w-8 h-8 rounded-full backdrop-blur-sm">
           <Play
-            size={14}
+            size={16}
             className="text-miku translate-x-0.5"
             aria-hidden="true"
           />
