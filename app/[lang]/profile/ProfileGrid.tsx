@@ -12,6 +12,9 @@ export const ProfileGrid = ({ items }: ProfileGridProps) => {
   const [openDialogId, setOpenDialogId] = useState<string | null>(null);
 
   const resolvedItems = items.map((item) => {
+    if (item.type === "custom") {
+      return item;
+    }
     const { action, ...rest } = item;
     const onClick =
       action.type === "link"

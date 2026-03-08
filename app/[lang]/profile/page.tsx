@@ -1,6 +1,9 @@
 import { getDictionary } from "@/get-dictionary";
 import { i18n, type Locale } from "@/i18n-config";
-import { type ApplicationIconItem, applicationIcons } from "./application.constant";
+import {
+  type ApplicationIconItem,
+  applicationIcons,
+} from "./application.constant";
 import { ProfileGrid } from "./ProfileGrid";
 
 export function generateStaticParams() {

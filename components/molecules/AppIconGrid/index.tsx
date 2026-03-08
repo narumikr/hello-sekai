@@ -14,12 +14,12 @@ export type AppIconGridItem =
   | {
       type: "custom";
       id: string;
+      label: string;
       children: ReactNode;
       colSpan?: number;
       rowSpan?: number;
     };
 
-// 後方互換のため AppIconItem も export する
 export type AppIconItem = Extract<AppIconGridItem, { type?: "icon" }>;
 
 interface AppIconGridProps {
