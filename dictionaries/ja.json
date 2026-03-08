@@ -16,7 +16,13 @@
       "pixiv": { "label": "三嶋くろね先生" },
       "tabelog": { "label": "食べログ" },
       "bluesky": { "label": "BlueSky" },
-      "memo": { "label": "メモ" }
+      "memo": { "label": "メモ" },
+      "prsk2": { "label": "プロセカ" },
+      "endfield2": { "label": "エンドフィールド" },
+      "endfield3": { "label": "エンドフィールド" },
+      "endfield4": { "label": "エンドフィールド" },
+      "endfield5": { "label": "エンドフィールド" },
+      "custom1": { "label": "Custom 1" }
     }
   }
 }
