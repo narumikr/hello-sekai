@@ -12,7 +12,7 @@ export const AppIcon = ({ iconPath, label, onClick }: AppIconProps) => {
       type="button"
       onClick={onClick}
       aria-label={label}
-      className="flex flex-col items-center  w-full p-2 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none"
+      className="flex flex-col items-center w-full h-full p-2 focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:outline-none"
     >
       <div
         aria-hidden="true"
