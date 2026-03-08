@@ -5,7 +5,7 @@
     "click-to-start": "クリックしてスタート"
   },
   "profile-page": {
-    "icons": {
+    "apps": {
       "prsk": { "label": "プロセカ" },
       "endfield": { "label": "エンドフィールド" },
       "arknights": { "label": "アークナイツ" },
@@ -17,12 +17,8 @@
       "tabelog": { "label": "食べログ" },
       "bluesky": { "label": "BlueSky" },
       "memo": { "label": "メモ" },
-      "prsk2": { "label": "プロセカ" },
-      "endfield2": { "label": "エンドフィールド" },
-      "endfield3": { "label": "エンドフィールド" },
-      "endfield4": { "label": "エンドフィールド" },
-      "endfield5": { "label": "エンドフィールド" },
-      "custom1": { "label": "Custom 1" }
+      "youtube": { "label": "YouTube" },
+      "music-widget": { "label": "好きな曲" }
     }
   }
 }

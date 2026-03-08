@@ -1,22 +1,24 @@
 {
   "entry-page": {
-    "greeting": "ハローセカイ",
-    "tap-to-start": "タップしてスタート",
-    "click-to-start": "クリックしてスタート"
+    "greeting": "Hello, World",
+    "tap-to-start": "Tap to Start",
+    "click-to-start": "Click to Start"
   },
   "profile-page": {
-    "icons": {
-      "prsk": { "label": "プロセカ" },
-      "endfield": { "label": "エンドフィールド" },
-      "arknights": { "label": "アークナイツ" },
+    "apps": {
+      "prsk": { "label": "Project SEKAI" },
+      "endfield": { "label": "Endfield" },
+      "arknights": { "label": "Arknights" },
       "github": { "label": "GitHub" },
       "instagram": { "label": "Instagram" },
       "x-twitter": { "label": "X" },
-      "sauna": { "label": "サウナ" },
-      "pixiv": { "label": "三嶋くろね先生" },
-      "tabelog": { "label": "食べログ" },
+      "sauna": { "label": "Sauna" },
+      "pixiv": { "label": "Mishima Kurone" },
+      "tabelog": { "label": "Tabelog" },
       "bluesky": { "label": "BlueSky" },
-      "memo": { "label": "メモ" }
+      "memo": { "label": "Memo" },
+      "youtube": { "label": "YouTube" },
+      "music-widget": { "label": "Favorite Songs" }
     }
   }
 }
