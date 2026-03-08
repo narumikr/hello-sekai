@@ -1,19 +1,27 @@
 import type { ReactNode } from "react";
-import type { AppIconItem } from "@/components/molecules/AppIconGrid";
+import type { ColSpan, RowSpan } from "@/components/molecules/AppGridLayout";
 
 export type IconAction =
   | { type: "link"; href: string }
   | { type: "dialog"; dialogId: string };
 
 export type ApplicationIconItem =
-  | (Omit<AppIconItem, "onClick"> & { action: IconAction })
+  | {
+      type?: "icon";
+      id: string;
+      iconPath: string;
+      label: string;
+      colSpan?: ColSpan;
+      rowSpan?: RowSpan;
+      action: IconAction;
+    }
   | {
       type: "custom";
       id: string;
       label: string;
       children: ReactNode;
-      colSpan?: number;
-      rowSpan?: number;
+      colSpan?: ColSpan;
+      rowSpan?: RowSpan;
     };
 
 type IconIconDefinition = Omit<

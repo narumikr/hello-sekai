@@ -1,7 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { AppIconGrid } from "@/components/molecules/AppIconGrid";
+import { AppIcon } from "@/components/atoms/AppIcon";
+import {
+  AppGridLayout,
+  type AppGridLayoutItem,
+} from "@/components/molecules/AppGridLayout";
 import type { ApplicationIconItem } from "./application.constant";
 
 interface ProfileGridProps {
@@ -11,21 +15,35 @@ interface ProfileGridProps {
 export const ProfileGrid = ({ items }: ProfileGridProps) => {
   const [openDialogId, setOpenDialogId] = useState<string | null>(null);
 
-  const resolvedItems = items.map((item) => {
+  const gridItems: AppGridLayoutItem[] = items.map((item) => {
     if (item.type === "custom") {
-      return item;
+      return {
+        id: item.id,
+        colSpan: item.colSpan,
+        rowSpan: item.rowSpan,
+        children: item.children,
+      };
     }
+
     const { action, ...rest } = item;
     const onClick =
       action.type === "link"
         ? () => window.open(action.href, "_blank")
         : () => setOpenDialogId(action.dialogId);
-    return { ...rest, onClick };
+
+    return {
+      id: rest.id,
+      colSpan: rest.colSpan,
+      rowSpan: rest.rowSpan,
+      children: (
+        <AppIcon iconPath={rest.iconPath} label={rest.label} onClick={onClick} />
+      ),
+    };
   });
 
   return (
     <>
-      <AppIconGrid items={resolvedItems} />
+      <AppGridLayout items={gridItems} />
       {/* TODO: openDialogId に応じたダイアログを表示 */}
     </>
   );
