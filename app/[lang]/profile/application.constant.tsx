@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { ColSpan, RowSpan } from "@/components/molecules/AppGridLayout";
+import type { ColSpan, RowSpan } from "@/components/layouts/AppGridLayout";
 
 export type IconAction =
   | { type: "link"; href: string }

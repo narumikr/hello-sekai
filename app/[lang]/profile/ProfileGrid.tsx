@@ -5,7 +5,7 @@ import { AppIcon } from "@/components/atoms/AppIcon";
 import {
   AppGridLayout,
   type AppGridLayoutItem,
-} from "@/components/molecules/AppGridLayout";
+} from "@/components/layouts/AppGridLayout";
 import type { ApplicationIconItem } from "./application.constant";
 
 interface ProfileGridProps {
