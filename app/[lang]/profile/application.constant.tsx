@@ -24,7 +24,7 @@ export type ApplicationIconItem =
       rowSpan?: RowSpan;
     };
 
-type IconIconDefinition = Omit<
+type IconItemDefinition = Omit<
   Extract<ApplicationIconItem, { action: IconAction }>,
   "label"
 >;
@@ -34,7 +34,7 @@ type CustomIconDefinition = Omit<
   "label"
 >;
 
-type IconDefinition = IconIconDefinition | CustomIconDefinition;
+type IconDefinition = IconItemDefinition | CustomIconDefinition;
 
 export const applicationIcons: IconDefinition[] = [
   {
