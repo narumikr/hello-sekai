@@ -1,16 +1,29 @@
+import type { ReactNode } from "react";
 import { AppIcon } from "@/components/atoms/AppIcon";
 
-export interface AppIconItem {
-  id: string;
-  iconPath: string;
-  label: string;
-  colSpan?: number;
-  rowSpan?: number;
-  onClick?: () => void;
-}
+export type AppIconGridItem =
+  | {
+      type?: "icon";
+      id: string;
+      iconPath: string;
+      label: string;
+      colSpan?: number;
+      rowSpan?: number;
+      onClick?: () => void;
+    }
+  | {
+      type: "custom";
+      id: string;
+      children: ReactNode;
+      colSpan?: number;
+      rowSpan?: number;
+    };
+
+// 後方互換のため AppIconItem も export する
+export type AppIconItem = Extract<AppIconGridItem, { type?: "icon" }>;
 
 interface AppIconGridProps {
-  items: AppIconItem[];
+  items: AppIconGridItem[];
 }
 
 export const AppIconGrid = ({ items }: AppIconGridProps) => {
@@ -26,11 +39,15 @@ export const AppIconGrid = ({ items }: AppIconGridProps) => {
               gridRow: item.rowSpan ? `span ${item.rowSpan}` : undefined,
             }}
           >
-            <AppIcon
-              iconPath={item.iconPath}
-              label={item.label}
-              onClick={item.onClick}
-            />
+            {item.type === "custom" ? (
+              item.children
+            ) : (
+              <AppIcon
+                iconPath={item.iconPath}
+                label={item.label}
+                onClick={item.onClick}
+              />
+            )}
           </div>
         ))}
       </div>
