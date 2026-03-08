@@ -20,7 +20,7 @@ export const AppIconGrid = ({ items }: AppIconGridProps) => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="aspect-square overflow-hidden"
+            className="aspect-square"
             style={{
               gridColumn: item.colSpan ? `span ${item.colSpan}` : undefined,
               gridRow: item.rowSpan ? `span ${item.rowSpan}` : undefined,
