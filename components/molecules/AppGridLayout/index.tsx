@@ -1,13 +1,16 @@
 import type { ReactNode } from "react";
 
+export type ColSpan = 1 | 2 | 3 | 4 | 5 | 6;
+export type RowSpan = 1 | 2 | 3 | 4;
+
 export interface AppGridLayoutItem {
   id: string;
-  colSpan?: number;
-  rowSpan?: number;
+  colSpan?: ColSpan;
+  rowSpan?: RowSpan;
   children: ReactNode;
 }
 
-interface AppGridLayoutProps {
+export interface AppGridLayoutProps {
   items: AppGridLayoutItem[];
 }
 
