@@ -16,7 +16,7 @@ export const AppIcon = ({ iconPath, label, onClick }: AppIconProps) => {
     >
       <div
         aria-hidden="true"
-        className="@container aspect-square w-full relative flex items-center justify-center rounded-lg backdrop-blur-sm border border-black/20"
+        className="@container aspect-square w-full relative flex items-center justify-center rounded-lg backdrop-blur-sm border border-miku"
       >
         <Image
           src={iconPath}
