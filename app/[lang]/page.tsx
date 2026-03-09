@@ -20,7 +20,7 @@ export default async function Page({
       <IntoSekai>
         <div className="flex justify-center flex-col items-center">
           <FileMusic size={96} className="text-ichika" />
-          <span className="ml-4 text-2xl font-bold text-ichika">
+          <span className="block mt-2 text-2xl font-bold text-ichika text-center">
             {dict["entry-page"]["untitled-wav"]}
           </span>
         </div>
