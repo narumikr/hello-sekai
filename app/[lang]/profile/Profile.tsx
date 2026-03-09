@@ -1,6 +1,5 @@
 "use client";
 
-import App from "next/app";
 import { useState } from "react";
 import { AppIcon } from "@/components/atoms/AppIcon";
 import { MusicPlayerWidget } from "@/components/atoms/MusicPlayerWidget";
@@ -141,7 +140,7 @@ const LinkApp = ({ id, labelInfo }: LinkAppProps) => {
 
   const handleClick = () => {
     if ("link" in appInfo) {
-      window.open(appInfo.link, "_blank");
+      window.open(appInfo.link, "_blank", "noopener,noreferrer");
     }
   };
 
