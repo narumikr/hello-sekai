@@ -5,6 +5,9 @@
   .bg-miku {
     background-color: var(--color-miku);
   }
+  .border-miku {
+    border-color: var(--color-miku);
+  }
 
   .text-rin {
     color: var(--color-rin);

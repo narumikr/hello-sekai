@@ -24,7 +24,7 @@ export const MusicPlayerWidget = ({
 }: MusicPlayerWidgetProps) => {
   return (
     <div className="relative p-2 h-full">
-      <div className="relative flex flex-col justify-center gap-4 h-full p-3 rounded-lg backdrop-blur-sm border border-black/20">
+      <div className="relative flex flex-col justify-center gap-4 h-full p-3 rounded-lg backdrop-blur-sm border border-miku">
         {/* 楽曲情報 */}
         <Swiper
           modules={[Autoplay, EffectFade]}
