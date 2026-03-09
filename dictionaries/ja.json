@@ -5,19 +5,20 @@
     "click-to-start": "クリックしてスタート"
   },
   "profile-page": {
-    "icons": {
-      "twitter":   { "label": "Twitter" },
-      "github":    { "label": "GitHub" },
+    "apps": {
+      "prsk": { "label": "プロセカ" },
+      "endfield": { "label": "エンドフィールド" },
+      "arknights": { "label": "アークナイツ" },
+      "github": { "label": "GitHub" },
       "instagram": { "label": "Instagram" },
-      "youtube":   { "label": "YouTube" },
-      "line":      { "label": "LINE" },
-      "discord":   { "label": "Discord" },
-      "tiktok":    { "label": "TikTok" },
-      "twitch":    { "label": "Twitch" },
-      "note":      { "label": "Note" },
-      "zenn":      { "label": "Zenn" },
-      "spotify":   { "label": "Spotify" },
-      "steam":     { "label": "Steam" }
+      "x-twitter": { "label": "X" },
+      "sauna": { "label": "サウナ" },
+      "pixiv": { "label": "三嶋くろね先生" },
+      "tabelog": { "label": "食べログ" },
+      "bluesky": { "label": "BlueSky" },
+      "memo": { "label": "メモ" },
+      "youtube": { "label": "YouTube" },
+      "music-widget": { "label": "好きな曲" }
     }
   }
 }
