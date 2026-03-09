@@ -1,6 +1,7 @@
 {
   "entry-page": {
     "greeting": "Hello, World",
+    "untitled-wav": "Untitled.wav",
     "tap-to-start": "Tap to Start",
     "click-to-start": "Click to Start"
   },
@@ -19,6 +20,9 @@
       "memo": { "label": "Memo" },
       "youtube": { "label": "YouTube" },
       "music-widget": { "label": "Favorite Songs" }
+    },
+    "dialog": {
+      "close": "Close"
     }
   }
 }

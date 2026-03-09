@@ -1,3 +1,4 @@
+import { FileMusic } from "lucide-react";
 import { getDictionary } from "@/get-dictionary";
 import { i18n, type Locale } from "@/i18n-config";
 import { IntoSekai } from "./entry";
@@ -17,10 +18,13 @@ export default async function Page({
   return (
     <main className="flex min-h-screen items-center justify-center">
       <IntoSekai>
-        <h1 className="text-4xl font-bold text-miku">
-          {dict["entry-page"].greeting}
-        </h1>
-        <div className="mt-4 text-sm text-center animate-pulse">
+        <div className="flex justify-center flex-col items-center">
+          <FileMusic size={96} className="text-ichika" />
+          <span className="block mt-2 text-2xl font-bold text-ichika text-center">
+            {dict["entry-page"]["untitled-wav"]}
+          </span>
+        </div>
+        <div className="mt-8 text-sm text-center animate-pulse text-saki">
           <span className="block lg:hidden">
             {dict["entry-page"]["tap-to-start"]}
           </span>

@@ -1,6 +1,7 @@
 {
   "entry-page": {
     "greeting": "ハローセカイ",
+    "untitled-wav": "Untitled.wav",
     "tap-to-start": "タップしてスタート",
     "click-to-start": "クリックしてスタート"
   },
@@ -19,6 +20,9 @@
       "memo": { "label": "メモ" },
       "youtube": { "label": "YouTube" },
       "music-widget": { "label": "好きな曲" }
+    },
+    "dialog": {
+      "close": "閉じる"
     }
   }
 }

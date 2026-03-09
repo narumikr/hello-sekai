@@ -12,11 +12,13 @@ export default async function Page({
   params: Promise<{ lang: Locale }>;
 }) {
   const { lang } = await params;
-  const apps = (await getDictionary(lang))["profile-page"].apps;
+  const dict = await getDictionary(lang);
+  const apps = dict["profile-page"].apps;
+  const dialog = dict["profile-page"].dialog;
 
   return (
     <main className="flex min-h-screen items-center justify-center py-12">
-      <Profile apps={apps} />
+      <Profile apps={apps} dialog={dialog} />
     </main>
   );
 }
