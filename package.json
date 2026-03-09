@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@naru/untitled-ui-library": "github:Narumikr/Untitled",
-    "lucide": "^0.577.0",
     "lucide-react": "^0.577.0",
     "next": "16.1.6",
     "react": "19.2.4",

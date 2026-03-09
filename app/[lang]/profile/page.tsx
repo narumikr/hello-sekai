@@ -17,12 +17,6 @@ export default async function Page({
   return (
     <main className="flex min-h-screen items-center justify-center py-12">
       <Profile apps={apps} />
-      {/* <MusicPlayerWidget
-        items={[
-          { title: "初音ミクの消失", artist: "cosMo@暴走P" },
-          { title: "ワールドイズマイン", artist: "ryo" },
-        ]}
-      /> */}
     </main>
   );
 }

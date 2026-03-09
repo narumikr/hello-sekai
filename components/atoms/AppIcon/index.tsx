@@ -22,6 +22,7 @@ export const AppIcon = ({ iconPath, label, onClick }: AppIconProps) => {
           src={iconPath}
           alt=""
           fill
+          sizes="(max-width: 640px) 20vw, (max-width: 1024px) 10vw, 64px"
           className="object-contain rounded-2xl p-2"
         />
       </div>
