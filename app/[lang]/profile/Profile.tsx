@@ -1,5 +1,8 @@
 "use client";
 
+import { XoMikuDialog, XxMikuDialog } from "@naru/untitled-ui-library";
+import DOMPurify from "dompurify";
+import parse from "html-react-parser";
 import { useState } from "react";
 import { AppIcon } from "@/components/atoms/AppIcon";
 import { MusicPlayerWidget } from "@/components/atoms/MusicPlayerWidget";
@@ -16,18 +19,28 @@ import { myFavoriteSongs } from "./constant/my-favorite-songs.constant";
 
 interface ProfileProps {
   apps: Awaited<ReturnType<typeof getDictionary>>["profile-page"]["apps"];
+  dialog: Awaited<ReturnType<typeof getDictionary>>["profile-page"]["dialog"];
 }
 
-export const Profile = ({ apps }: ProfileProps) => {
-  const [openDialogId, setOpenDialogId] = useState<string | null>(null);
+const XXMIKU_DIALOG = 1;
+const XOMIKU_DIALOG = 2;
+
+export const Profile = ({ apps, dialog }: ProfileProps) => {
+  const [openDialogId, setOpenDialogId] = useState<ApplicationId | null>(null);
+  const [idxDialog, setIdxDialog] = useState(XXMIKU_DIALOG);
 
   const createAppItem = (id: ApplicationId): AppGridLayoutItem => {
     const appInfo = applicationInfo[id];
     const label = apps[id]?.label ?? id;
-    const onClick =
-      "link" in appInfo
-        ? () => window.open(appInfo.link, "_blank", "noopener,noreferrer")
-        : () => setOpenDialogId(id);
+    const onClick = () => {
+      if ("link" in appInfo) {
+        window.open(appInfo.link, "_blank", "noopener,noreferrer");
+      } else {
+        setOpenDialogId(id);
+      }
+
+      setIdxDialog(Math.random() < 0.5 ? XXMIKU_DIALOG : XOMIKU_DIALOG);
+    };
 
     return {
       id,
@@ -63,5 +76,48 @@ export const Profile = ({ apps }: ProfileProps) => {
     createAppItem("memo"),
   ];
 
-  return <AppGridLayout items={items} />;
+  const button = [
+    {
+      text: dialog.close ?? "閉じる",
+      onClick: () => setOpenDialogId(null),
+      ariaLabel: dialog.close ?? "閉じる",
+    },
+  ];
+
+  const dialogContent = ({ id }: { id: ApplicationId }) => {
+    if (id === null) return null;
+    const content =
+      "note" in applicationInfo[id]
+        ? (applicationInfo[id].note as readonly string[])
+        : [];
+    return (
+      <div>
+        {content.map((note) => (
+          <p key={`${id}-${note}`}>{parse(DOMPurify.sanitize(String(note)))}</p>
+        ))}
+      </div>
+    );
+  };
+
+  return (
+    <>
+      <AppGridLayout items={items} />
+      <XxMikuDialog
+        open={Boolean(openDialogId) && idxDialog === XXMIKU_DIALOG}
+        title={apps[openDialogId as ApplicationId]?.label}
+        onClose={() => setOpenDialogId(null)}
+        buttons={button}
+      >
+        {dialogContent({ id: openDialogId as ApplicationId })}
+      </XxMikuDialog>
+      <XoMikuDialog
+        open={Boolean(openDialogId) && idxDialog === XOMIKU_DIALOG}
+        title={apps[openDialogId as ApplicationId]?.label}
+        onClose={() => setOpenDialogId(null)}
+        buttons={button}
+      >
+        {dialogContent({ id: openDialogId as ApplicationId })}
+      </XoMikuDialog>
+    </>
+  );
 };

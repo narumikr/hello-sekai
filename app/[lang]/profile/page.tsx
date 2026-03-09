@@ -13,10 +13,11 @@ export default async function Page({
 }) {
   const { lang } = await params;
   const apps = (await getDictionary(lang))["profile-page"].apps;
+  const dialog = (await getDictionary(lang))["profile-page"].dialog;
 
   return (
     <main className="flex min-h-screen items-center justify-center py-12">
-      <Profile apps={apps} />
+      <Profile apps={apps} dialog={dialog} />
     </main>
   );
 }

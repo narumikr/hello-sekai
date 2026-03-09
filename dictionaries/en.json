@@ -19,6 +19,9 @@
       "memo": { "label": "Memo" },
       "youtube": { "label": "YouTube" },
       "music-widget": { "label": "Favorite Songs" }
+    },
+    "dialog": {
+      "close": "閉じる"
     }
   }
 }
