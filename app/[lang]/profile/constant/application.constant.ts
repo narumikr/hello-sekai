@@ -88,7 +88,7 @@ export const applicationInfo = {
   },
   memo: {
     iconPath: "/images/icons/memo.png",
-    note: ["Comming soon..."],
+    note: ["Coming soon..."],
   },
   youtube: {
     iconPath: "/images/icons/youtube.png",

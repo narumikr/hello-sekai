@@ -84,7 +84,7 @@ export const Profile = ({ apps, dialog }: ProfileProps) => {
     },
   ];
 
-  const dialogContent = ({ id }: { id: ApplicationId }) => {
+  const dialogContent = ({ id }: { id: ApplicationId | null }) => {
     if (id === null) return null;
     const content =
       "note" in applicationInfo[id]
@@ -104,19 +104,19 @@ export const Profile = ({ apps, dialog }: ProfileProps) => {
       <AppGridLayout items={items} />
       <XxMikuDialog
         open={Boolean(openDialogId) && idxDialog === XXMIKU_DIALOG}
-        title={apps[openDialogId as ApplicationId]?.label}
+        title={openDialogId ? apps[openDialogId]?.label : ""}
         onClose={() => setOpenDialogId(null)}
         buttons={button}
       >
-        {dialogContent({ id: openDialogId as ApplicationId })}
+        {dialogContent({ id: openDialogId })}
       </XxMikuDialog>
       <XoMikuDialog
         open={Boolean(openDialogId) && idxDialog === XOMIKU_DIALOG}
-        title={apps[openDialogId as ApplicationId]?.label}
+        title={openDialogId ? apps[openDialogId]?.label : ""}
         onClose={() => setOpenDialogId(null)}
         buttons={button}
       >
-        {dialogContent({ id: openDialogId as ApplicationId })}
+        {dialogContent({ id: openDialogId })}
       </XoMikuDialog>
     </>
   );
