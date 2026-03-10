@@ -41,4 +41,16 @@ export const myFavoriteSongs: MusicPlayerItem[] = [
     title: "スマイル*シンフォニー",
     artist: "DECO*27",
   },
+  {
+    title: "キティ",
+    artist: "ツミキ",
+  },
+  {
+    title: "透明なパレット",
+    artist: "Aqu3ra",
+  },
+  {
+    title: "ももいろの鍵",
+    artist: "いよわ",
+  },
 ];

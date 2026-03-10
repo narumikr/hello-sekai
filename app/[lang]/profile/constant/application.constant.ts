@@ -15,7 +15,7 @@ export const applicationInfo = {
   endfield: {
     iconPath: "/images/icons/endfield.png",
     note: [
-      "管理人とペリカが推し🍎",
+      "管理人とペリカ、ギルベルタが推し🍎💌",
       "工業難しすぎ...💦",
       "グラフィック綺麗すぎてびっくりしてる✨",
       "<br>",
@@ -88,7 +88,11 @@ export const applicationInfo = {
   },
   memo: {
     iconPath: "/images/icons/memo.png",
-    note: ["Coming soon..."],
+    note: [
+      "セカイのみんなと旅したり、おいしいものを一緒に食べに行ったりしてる🗻",
+      "ラーメン大好きなのでおすすめあったらぜひ教えてほしい🍜",
+      "奏と志歩とにっこり調査してきます(￣△￣*)",
+    ],
   },
   youtube: {
     iconPath: "/images/icons/youtube.png",
@@ -96,7 +100,7 @@ export const applicationInfo = {
       "QuizKnockの動画は全部チェックしてる✨",
       "リドラのクイズも好きで見てる！",
       "積分サークルもおもろい企画多くて好き",
-      "アニメ系でいうと、ぼくわたチャンネルも毎日チェックしてる！",
+      "アニメ系では、ぼくわたチャンネルが好きでチェックしてる！",
     ],
   },
 } as const;
