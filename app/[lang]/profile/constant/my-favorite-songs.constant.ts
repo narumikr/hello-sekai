@@ -30,6 +30,10 @@ export const myFavoriteSongs: MusicPlayerItem[] = [
     artist: "ゆうゆ",
   },
   {
+    title: "はぐ",
+    artist: "MIMI",
+  },
+  {
     title: "街",
     artist: "jon-YAKITORY",
   },
@@ -52,5 +56,9 @@ export const myFavoriteSongs: MusicPlayerItem[] = [
   {
     title: "ももいろの鍵",
     artist: "いよわ",
+  },
+  {
+    title: "サイバーパンクデッドボーイ",
+    artist: "マイキP",
   },
 ];
