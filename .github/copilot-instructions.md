@@ -22,7 +22,3 @@
 ### フロントエンドコードレビューガイドライン
 
 `frontend/` ディレクトリ内のコードに対するレビューでは、`./instructions/react.instructions.md` に記載されたガイドラインに従ってください。
-
-### バックエンドコードレビューガイドライン
-
-`backend/` ディレクトリ内のコードに対するレビューでは、`./instructions/fastapi.instructions.md` に記載されたガイドラインに従ってください。
