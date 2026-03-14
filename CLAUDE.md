@@ -18,20 +18,22 @@
 ./
 ├── .github/                # CI/CD設定
 ├── .claude/                # Agentルール・Skills
-├── app/                    # Next.js App Router
-│   ├── [lang]/             # i18n 動的ルートセグメント
-│   │   └── page.tsx        # トップページ（ja/en 対応）
-│   ├── globals.css         # グローバルスタイル
-│   ├── layout.tsx          # ルートレイアウト
-│   └── page.tsx            # デフォルトロケールへのリダイレクト
-├── dictionaries/           # i18n 翻訳ファイル
-│   ├── en.json             # 英語
-│   └── ja.json             # 日本語
+├── src/                    # ソースコード
+│   ├── app/                # Next.js App Router
+│   │   ├── [lang]/         # i18n 動的ルートセグメント
+│   │   │   └── page.tsx    # トップページ（ja/en 対応）
+│   │   ├── layout.tsx      # ルートレイアウト
+│   │   └── page.tsx        # デフォルトロケールへのリダイレクト
+│   ├── components/         # Atomic Design コンポーネント
+│   ├── dictionaries/       # i18n 翻訳ファイル
+│   │   ├── en.json         # 英語
+│   │   └── ja.json         # 日本語
+│   ├── styles/             # グローバルスタイル
+│   ├── get-dictionary.ts   # 翻訳辞書ローダー
+│   ├── i18n-config.ts      # ロケール設定
+│   └── proxy.ts            # ロケール検出・リダイレクト
 ├── public/                 # 静的アセット
 ├── biome.json              # Biome 設定
-├── get-dictionary.ts       # 翻訳辞書ローダー
-├── i18n-config.ts          # ロケール設定
-├── proxy.ts                # ロケール検出・リダイレクト
 ├── next.config.ts          # Next.js 設定
 ├── postcss.config.mjs      # PostCSS 設定
 ├── tsconfig.json           # TypeScript 設定
