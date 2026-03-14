@@ -13,7 +13,7 @@ function getLocale(request: NextRequest): string {
       const q = qParam ? parseFloat(qParam) : 1.0;
       return { lang: lang.trim().toLowerCase(), q };
     })
-    .filter(({ q }) => !isNaN(q))
+    .filter(({ q }) => !Number.isNaN(q))
     .sort((a, b) => b.q - a.q);
 
   // 優先度順に対応ロケールを探す（サブタグ照合も含む）
