@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@naru/untitled-ui-library':
         specifier: github:Narumikr/Untitled
-        version: https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       dompurify:
         specifier: ^3.3.3
         version: 3.3.3
@@ -30,8 +30,8 @@ importers:
         specifier: 19.2.4
         version: 19.2.4(react@19.2.4)
       swiper:
-        specifier: ^12.1.2
-        version: 12.1.2
+        specifier: ^12.1.3
+        version: 12.1.3
     devDependencies:
       '@biomejs/biome':
         specifier: 2.4.4
@@ -274,9 +274,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b':
-    resolution: {tarball: https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b}
-    version: 3.0.0
+  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78':
+    resolution: {tarball: https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78}
+    version: 3.1.0
     peerDependencies:
       '@types/react': ^19.2.7
       '@types/react-dom': ^19.2.3
@@ -688,8 +688,8 @@ packages:
       babel-plugin-macros:
         optional: true
 
-  swiper@12.1.2:
-    resolution: {integrity: sha512-4gILrI3vXZqoZh71I1PALqukCFgk+gpOwe1tOvz5uE9kHtl2gTDzmYflYCwWvR4LOvCrJi6UEEU+gnuW5BtkgQ==}
+  swiper@12.1.3:
+    resolution: {integrity: sha512-XcWlVmkHFICI4fuoJKgbp8PscDcS4i7pBH8nwJRBi3dpQvhCySwsWRYm4bOf/BzKVWkHOYaFw7qz9uBSrY3oug==}
     engines: {node: '>= 4.7.0'}
 
   tailwindcss@4.2.1:
@@ -872,7 +872,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@types/react': 19.2.14
@@ -881,7 +881,7 @@ snapshots:
       framer-motion: 12.35.1(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
-      swiper: 12.1.2
+      swiper: 12.1.3
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
 
@@ -1239,7 +1239,7 @@ snapshots:
       client-only: 0.0.1
       react: 19.2.4
 
-  swiper@12.1.2: {}
+  swiper@12.1.3: {}
 
   tailwindcss@4.2.1: {}
 
