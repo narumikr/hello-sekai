@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@naru/untitled-ui-library':
         specifier: github:Narumikr/Untitled
-        version: https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       dompurify:
         specifier: ^3.3.3
         version: 3.3.3
@@ -18,8 +18,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.16(react@19.2.4)
       lucide-react:
-        specifier: ^0.577.0
-        version: 0.577.0(react@19.2.4)
+        specifier: ^1.7.0
+        version: 1.7.0(react@19.2.4)
       next:
         specifier: 16.1.6
         version: 16.1.6(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -274,9 +274,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b':
-    resolution: {tarball: https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b}
-    version: 3.0.0
+  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78':
+    resolution: {tarball: https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78}
+    version: 3.1.0
     peerDependencies:
       '@types/react': ^19.2.7
       '@types/react-dom': ^19.2.3
@@ -590,8 +590,8 @@ packages:
     resolution: {integrity: sha512-l51N2r93WmGUye3WuFoN5k10zyvrVs0qfKBhyC5ogUQ6Ew6JUSswh78mbSO+IU3nTWsyOArqPCcShdQSadghBQ==}
     engines: {node: '>= 12.0.0'}
 
-  lucide-react@0.577.0:
-    resolution: {integrity: sha512-4LjoFv2eEPwYDPg/CUdBJQSDfPyzXCRrVW1X7jrx/trgxnxkHFjnVZINbzvzxjN70dxychOfg+FTYwBiS3pQ5A==}
+  lucide-react@1.7.0:
+    resolution: {integrity: sha512-yI7BeItCLZJTXikmK4KNUGCKoGzSvbKlfCvw44bU4fXAL6v3gYS4uHD1jzsLkfwODYwI6Drw5Tu9Z5ulDe0TSg==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -872,7 +872,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@types/react': 19.2.14
@@ -1124,7 +1124,7 @@ snapshots:
       lightningcss-win32-arm64-msvc: 1.31.1
       lightningcss-win32-x64-msvc: 1.31.1
 
-  lucide-react@0.577.0(react@19.2.4):
+  lucide-react@1.7.0(react@19.2.4):
     dependencies:
       react: 19.2.4
 
