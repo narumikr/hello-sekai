@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@naru/untitled-ui-library':
         specifier: github:Narumikr/Untitled
-        version: https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       dompurify:
         specifier: ^3.3.3
         version: 3.3.3
@@ -40,8 +40,8 @@ importers:
         specifier: ^4
         version: 4.2.1
       '@types/node':
-        specifier: ^20
-        version: 20.19.33
+        specifier: ^25
+        version: 25.5.2
       '@types/react':
         specifier: ^19
         version: 19.2.14
@@ -274,9 +274,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b':
-    resolution: {tarball: https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b}
-    version: 3.0.0
+  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78':
+    resolution: {tarball: https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78}
+    version: 3.1.0
     peerDependencies:
       '@types/react': ^19.2.7
       '@types/react-dom': ^19.2.3
@@ -425,8 +425,8 @@ packages:
   '@tailwindcss/postcss@4.2.1':
     resolution: {integrity: sha512-OEwGIBnXnj7zJeonOh6ZG9woofIjGrd2BORfvE5p9USYKDCZoQmfqLcfNiRWoJlRWLdNPn2IgVZuWAOM4iTYMw==}
 
-  '@types/node@20.19.33':
-    resolution: {integrity: sha512-Rs1bVAIdBs5gbTIKza/tgpMuG1k3U/UMJLWecIMxNdJFDMzcM5LOiLVRYh3PilWEYDIeUDv7bpiHPLPsbydGcw==}
+  '@types/node@25.5.2':
+    resolution: {integrity: sha512-tO4ZIRKNC+MDWV4qKVZe3Ql/woTnmHDr5JD8UI5hn2pwBrHEwOEMZK7WlNb5RKB6EoJ02gwmQS9OrjuFnZYdpg==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -707,8 +707,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@7.18.2:
+    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
 
 snapshots:
 
@@ -872,7 +872,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/13cc9fc4795c180b136d9d7a3853bb6c26a0355b(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
+  '@naru/untitled-ui-library@https://codeload.github.com/Narumikr/Untitled/tar.gz/9f2681d4183a24afa5f1bee9ac10a6fc30bf3f78(@types/react-dom@19.2.3(@types/react@19.2.14))(@types/react@19.2.14)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
       '@babel/runtime': 7.28.6
       '@types/react': 19.2.14
@@ -984,9 +984,9 @@ snapshots:
       postcss: 8.5.6
       tailwindcss: 4.2.1
 
-  '@types/node@20.19.33':
+  '@types/node@25.5.2':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 7.18.2
 
   '@types/react-dom@19.2.3(@types/react@19.2.14)':
     dependencies:
@@ -1249,4 +1249,4 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  undici-types@6.21.0: {}
+  undici-types@7.18.2: {}
