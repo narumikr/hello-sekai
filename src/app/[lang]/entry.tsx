@@ -17,7 +17,7 @@ export const IntoSekai = ({ children }: IntoSekaiProps) => {
   return (
     <div>
       {children}
-      <IntoTheSekai execEvent={handleClick} />
+      <IntoTheSekai execEvent={handleClick} execEventDelay={50} />
     </div>
   );
 };
