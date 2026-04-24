@@ -17,7 +17,7 @@ export default async function Page({
   const dialog = dict["profile-page"].dialog;
 
   return (
-    <main className="flex min-h-screen items-center justify-center py-12">
+    <main className="flex h-dvh items-center justify-center py-12">
       <Profile apps={apps} dialog={dialog} />
     </main>
   );

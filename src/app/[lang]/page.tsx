@@ -16,7 +16,7 @@ export default async function Page({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex min-h-screen items-center justify-center">
+    <main className="flex h-dvh items-center justify-center">
       <IntoSekai>
         <div className="flex justify-center flex-col items-center">
           <FileMusic size={96} className="text-ichika" />
