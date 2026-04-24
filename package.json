@@ -16,7 +16,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@naru/untitled-ui-library": "github:Narumikr/Untitled",
+    "@naru/untitled-ui-library": "github:Narumikr/Untitled#release/untitled",
     "dompurify": "^3.3.3",
     "html-react-parser": "^3.0.2",
     "lucide-react": "^0.577.0",
