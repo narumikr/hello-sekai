@@ -19,7 +19,7 @@
     "@naru/untitled-ui-library": "github:Narumikr/Untitled#release/untitled",
     "dompurify": "^3.3.3",
     "html-react-parser": "^3.0.2",
-    "lucide-react": "^0.577.0",
+    "lucide-react": "^1.11.0",
     "next": "16.1.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
