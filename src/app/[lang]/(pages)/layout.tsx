@@ -1,4 +1,5 @@
 import { SekaiBackground } from "@naru/untitled-ui-library";
+import { SmartPhoneLayout } from "@/components/layouts/SmartPhone";
 
 export default function PagesLayout({
   children,
@@ -6,9 +7,9 @@ export default function PagesLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="w-full max-w-180 mx-auto px-4">
+    <SmartPhoneLayout>
       <SekaiBackground bgOpacity={0.5} />
       {children}
-    </div>
+    </SmartPhoneLayout>
   );
 }
