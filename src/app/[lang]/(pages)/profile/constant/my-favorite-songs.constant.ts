@@ -26,20 +26,28 @@ export const myFavoriteSongs: MusicPlayerItem[] = [
     artist: "DECO*27",
   },
   {
-    title: "レグルス",
-    artist: "ゆうゆ",
+    title: "イレヴンス",
+    artist: "ポリスピカデリー",
+  },
+  {
+    title: "透明なパレット",
+    artist: "Aqu3ra",
   },
   {
     title: "はぐ",
     artist: "MIMI",
   },
   {
-    title: "街",
-    artist: "jon-YAKITORY",
+    title: "レグルス",
+    artist: "ゆうゆ",
   },
   {
     title: "アンチユー",
     artist: "Chinozo",
+  },
+  {
+    title: "街",
+    artist: "jon-YAKITORY",
   },
   {
     title: "スマイル*シンフォニー",
@@ -48,10 +56,6 @@ export const myFavoriteSongs: MusicPlayerItem[] = [
   {
     title: "キティ",
     artist: "ツミキ",
-  },
-  {
-    title: "透明なパレット",
-    artist: "Aqu3ra",
   },
   {
     title: "ももいろの鍵",
