@@ -7,7 +7,7 @@ interface ClockDisplayProps {
 }
 
 export const ClockDisplay = ({ className }: ClockDisplayProps) => {
-  const currentTime = useCurrentTime();
+  const currentTime = useCurrentTime(60 * 1000);
 
   const hours = String(currentTime.getHours()).padStart(2, "0");
   const minutes = String(currentTime.getMinutes()).padStart(2, "0");

@@ -10,14 +10,25 @@ export const useCurrentTime = (updateInterval = 1000) => {
   const [currentTime, setCurrentTime] = useState<Date>(() => new Date());
 
   useEffect(() => {
-    setCurrentTime(new Date());
+    const safeUpdateInterval = Math.max(1, Math.floor(updateInterval));
+    let intervalId: number | null = null;
 
-    const timerId = window.setInterval(() => {
+    const nextTickDelay =
+      safeUpdateInterval - (Date.now() % safeUpdateInterval);
+    const timeoutId = window.setTimeout(() => {
       setCurrentTime(new Date());
-    }, updateInterval);
+
+      intervalId = window.setInterval(() => {
+        setCurrentTime(new Date());
+      }, safeUpdateInterval);
+    }, nextTickDelay);
 
     return () => {
-      window.clearInterval(timerId);
+      window.clearTimeout(timeoutId);
+
+      if (intervalId !== null) {
+        window.clearInterval(intervalId);
+      }
     };
   }, [updateInterval]);
 
